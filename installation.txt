@@ -2,3 +2,4 @@ Installation on IIS
 ---------------------------------
 
 Content goes here
+Adjusting background color to green  for issue 7
