@@ -1,0 +1,15 @@
+name: install-netlify-package
+on: [push]
+
+jobs:
+  check-netlify-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # or '20.12.2' to be exact
+
+      - run: npm install -g netlify-cli
+      - run: netlify -v
